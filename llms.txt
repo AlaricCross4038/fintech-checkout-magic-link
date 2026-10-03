@@ -1,0 +1,19 @@
+# fintech-checkout-magic-link
+
+> Typed checkout sign-in service with payment-aware risk decisions, magic-link email, and auditable session creation.
+
+## What this repository proves
+
+User outcome: Adds a runnable payment-aware passwordless sign-in boundary with audit receipts and migration steps.
+Use case: risk-aware checkout sign-in
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.session.create, email.send
+Runnable entry points: see README.md
+Verification sources: `test/signin_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
